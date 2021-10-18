@@ -1,0 +1,18 @@
+Game:
+Tap the screen to make bird fly.Stay in the middle of pipes.
+
+Steps:
+
+1. Tap the arrow to start. Arrow is an eventListener with button in HTML doc.
+
+2. Tap the screen again to allow your bird to fly and to start the game. Same effect as the arrow but object (bird) displays motion on tap.
+
+3.Stay in the middle of screen until the first set of pipes appears. Screen moves 200px to the right where class"pipes" are activated.
+
+4. Player measures tap heights to go between the two pipes. Function created for this.
+
+5. Tap fast and go higher. eventListener on tap to reduce height distance between pipes.
+
+6. When player hits bottom of top pipe, bird drops to lower pipe height/ground.
+
+7. Game ends with innerTextHTML
