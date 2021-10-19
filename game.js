@@ -9,8 +9,9 @@ const cardArray = [
   {name: 'orange', img: 'images/orange.jpg'},
   {name: 'pineapple', img: 'images/pineapple.jpg'},
   {name: 'strawberry', img: 'images/strawberry.jpg'},
+  {name: 'blank', img: 'images/blank.jpg'},
 ]
-
+cardArray.sort(() => 0.5 - Math.random())
 const resultDisplay = document.querySelector('#result')
 
 //create grid and deck of cards to fill up the grid
@@ -59,41 +60,14 @@ function checkForMatch() {
     cardsWon.push(cardsChosen)
   } else {
     cards[optionOneId].setAttribute('src', 'images/white.jpg')
-    cards[optionTwoId].setAttribute]('src', 'images/white.jpg')
+    cards[optionTwoId].setAttribute('src', 'images/white.jpg')
     alert('Try again')
   }
-}
-
-  cardArray.sort(() => 0.5 - Math.random())
-  
-    
-  
-    //check for matches
-
-      if(optionOneId == optionTwoId) {
-        cards[optionOneId].setAttribute('src', 'images/blank.jpg')
-        cards[optionTwoId].setAttribute('src', 'images/blank.jpg')
-        alert('You have clicked the same image!')
-      }
-      else if (cardsChosen[0] === cardsChosen[1]) {
-        alert('You found a match')
-        cards[optionOneId].setAttribute('src', 'images/white.jpg')
-        cards[optionTwoId].setAttribute('src', 'images/white.jpg')
-        cards[optionOneId].removeEventListener('click', flipCard)
-        cards[optionTwoId].removeEventListener('click', flipCard)
-        cardsWon.push(cardsChosen)
-      } else {
-        cards[optionOneId].setAttribute('src', 'images/blank.jpg')
-        cards[optionTwoId].setAttribute('src', 'images/blank.jpg')
-        alert('Sorry, try again')
-      }
-      cardsChosen = []
-      cardsChosenId = []
-      resultDisplay.textContent = cardsWon.length
-      if  (cardsWon.length === cardArray.length/2) {
-        resultDisplay.textContent = 'Congratulations! You found them all!'
-      }
-    }
-
-    createBoard()
+  cardsChosen = []
+  cardsChosenId = []
+  resultDisplay.textContent = cardsWon.length
+  if (cardsWon.length === cardArray.length/2) {
+    resultDisplay.textContent = 'Good Job!'
+  } else {
+    createBoard();
   }

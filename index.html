@@ -2,41 +2,76 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
-  <title>Memory Game</title>
-  <link rel="stylesheet" href="style.css"></link>
-  <link href="css/cardstarter.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <script src="game.js" charset="utf-8"></script>
+  <title>Memory Game</title>
+  <script defer src="game.js"></script>
 </head>
 <body>
-
-  <h3>Score:<span id="result"></span></h3>
-<div class="grid"></div>
-  <div class="row">
-    div id="card-1" class="card large shadow">
-    div id="card-2" class="card large shadow">
-    div id="card-3" class="card large outline">
-  </div>
-
-  <div class="row">
-  div id="card-4" class="card small back-red shadow">
-  div id="card-5" class="card small back-red shadow">
-  div id="card-6" class="card small back-red shadow">
-</div>
-
-<div class="row">
-    div id="card-7" class="card small back-red shadow">
-    div id="card-8" class="card small back-red shadow">
-    div id="card-9" class="card small back-red shadow">
-  </div> 
-  
-<div class="row">
-    div id="card-10" class="card small back-red shadow">
-    div id="card-11" class="card small back-red shadow">
-    div id="card-12" class="card small back-red shadow">
-  </div>
-  <div class="grid">
-  </div>
-
+    <h1 class="page-title">Memory-Game</h1>
+    <div class="game-container">
+        <div class="game-info-container">
+            <div class="game-info"> Time <span id="time-remaining">100</span>
+            </div>
+            <div class="game-info">Flips<span id="flips">0</span></div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="images/blank.jpg">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="images/apple.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="images/blank.jpg">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="images/avocado.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="images/blank.jpg">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="images/banana.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="images/blank.jpg">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="images/cherry.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="images/blank.jpg">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="images/orange.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="images/blank.jpg">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="images/pineapple.jpg">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="images/blank.jpg">
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" src="images/strawberry.jpg">
+            </div>
+        </div>
+    </div>
 </body>
 </html>

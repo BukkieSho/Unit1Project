@@ -4,56 +4,75 @@
     width: 400px;
     height: 300px;
   }
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background: radial-gradient(rgb(224, 26, 26), black);
+}
 
-  //css for images
-  .front-face,
-.back-face {
+html {
+    min-height: 100vh;
+}
+.page-title {
+    color:rgb(20, 194, 194);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 6em;
+}
+.game-info-container {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.game-info {
+    color: chocolate;
+    font-size: 4em;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+    margin: 50px auto;
+    justify-content: center;
+    perspective: 500px;
+}
+.card {
+    background-color: pink;
+    height: 175px;
+    width: 125px;
+    position: relative;
+}
+
+.card-face {
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   position: absolute;
-  border-radius: 5px;
-  background: #1C7CCC;
   backface-visibility: hidden;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.card-back {
+    background-color: black;
+    border-color: orange;
 }
   
-  .front-face,
-  .back-face {
+.card-front {
     width: 100%;
     height: 100%;
     padding: 20px;
     position: absolute;
-    border-radius: 5px;
-    background: #1C7CCC;
+    border-radius: 10px;
+    background-color: #1C7CCC;
   }
-
-
-/* start mine */
-.closed-card {
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    position: absolute;
-    border-radius: 5px;
-    background-color: black;
-    font-size: 0%;
-    backface-visibility: hidden;
-}
-.memory-card {
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    position: relative;
-    border-radius: 5px;
-    background-color: blue;
-    font-size: large;
-}
-.front-card {
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    position: absolute;
-    border-radius: 5px;
-    background-color: blue;
-    font-size: x-large;
-}
