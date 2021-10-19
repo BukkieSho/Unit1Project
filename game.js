@@ -69,5 +69,5 @@ function checkForMatch() {
   if (cardsWon.length === cardArray.length/2) {
     resultDisplay.textContent = 'Good Job!'
   } else {
-    createBoard();
+    createBoard()
   }
