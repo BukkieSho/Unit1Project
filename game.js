@@ -10,6 +10,7 @@ const cardArray = [
   {name: 'pineapple', img: 'images/pineapple.jpg'},
   {name: 'strawberry', img: 'images/strawberry.jpg'},
   {name: 'blank', img: 'images/blank.jpg'},
+  {name: 'back', img: 'images/back.png'}
 ]
 cardArray.sort(() => 0.5 - Math.random())
 const resultDisplay = document.querySelector('#result')
@@ -49,19 +50,19 @@ function flipCard() {
 }
 
 //check if cards match after clicking
-function checkForMatch() {
+function checkForMatch(){
   let cards = document.querySelectorAll('img')
   let optionOneId = cardsChosenId[0]
   let optionTwoId = cardsChosenId[1]
   if (cardsChosen[0] === cardsChosen[1]) {
-    alert('Matched!!!!')
-    cards[optionOneId].setAttribute('src', 'images/blank.jpg')
-    cards[optionTwoId].setAttribute('src', 'images/blank.jpg')
-    cardsWon.push(cardsChosen)
-  } else {
-    cards[optionOneId].setAttribute('src', 'images/white.jpg')
-    cards[optionTwoId].setAttribute('src', 'images/white.jpg')
-    alert('Try again')
+    alert('Matched!!!!');
+    cards[optionOneId].setAttribute('src', 'images/blank.jpg');
+    cards[optionTwoId].setAttribute('src', 'images/blank.jpg');
+    cardsWon.push(cardsChosen);
+    } else {
+    cards[optionOneId].setAttribute('src', 'images/back.png');
+    cards[optionTwoId].setAttribute('src', 'images/back.png');
+    alert('Try again');
   }
   cardsChosen = []
   cardsChosenId = []
@@ -71,3 +72,4 @@ function checkForMatch() {
   } else {
     createBoard()
   }
+}
