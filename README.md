@@ -1,5 +1,5 @@
 # Unit1Project
-Flappy Bird game, created using HTML, CSS and JavaScript.
+## Memory Game Objective
+This is a simple game built to test a users memory. There's a deck of cards with different icons.
+___
 
-
-Resources used are freecodecamp.org, class notes, some github repos [link after completion]
