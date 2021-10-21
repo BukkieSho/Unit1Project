@@ -1,19 +1,19 @@
 let cardArray = [ 
-  {name: 'apple', img: 'images/apple.jpg', },
-  {name: 'avocado', img: 'images/avocado.jpg', },
-  {name: 'banana', img: 'images/banana.jpg'},
-  {name: 'cherry', img: 'images/cherry.jpg'},
-  {name: 'orange', img: 'images/orange.jpg'},
-  {name: 'pineapple', img: 'images/pineapple.jpg'},
+  {name: 'apple', img: 'images/apple.jpg'},
   {name: 'apple', img: 'images/apple.jpg'},
   {name: 'avocado', img: 'images/avocado.jpg'},
+  {name: 'avocado', img: 'images/avocado.jpg'},
+  {name: 'banana', img: 'images/banana.jpg'},
   {name: 'banana', img: 'images/banana.jpg'},
   {name: 'cherry', img: 'images/cherry.jpg'},
+  {name: 'cherry', img: 'images/cherry.jpg'},
+  {name: 'orange', img: 'images/orange.jpg'},
   {name: 'orange', img: 'images/orange.jpg'},
   {name: 'pineapple', img: 'images/pineapple.jpg'},
+  {name: 'pineapple', img: 'images/pineapple.jpg'},
   {name: 'blank', img: 'images/blank.jpg'},
-  {name: 'back', img: 'images/back.png'},
-];
+  {name: 'blank', img: 'images/blank.jpg'},
+]
 
   //define variables and get DOM element
   

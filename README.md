@@ -2,6 +2,8 @@
 This game is also known as Concentration.\
 The goal is to flip over two hidden cards to locate the ones that match.
 
+## Play the Game
+- Game can be accessed [here](https://bukkiesho.github.io/Unit1Project/)
 ## Getting Started
 The game is a 3 x 4 grid and cards are randomly placed. There are 6 different parts of card with different images.\
 If both cards match after flipping, both cards stay flipped over.\
