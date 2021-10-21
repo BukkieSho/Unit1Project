@@ -23,3 +23,8 @@ forEach\
 innerText and innerHTML\
 forEach\
 if functions
+
+#### Credit
+- Youtube channel ()
+- [freeCodeCamp](https://freecodecamp.org)
+- [Such a big help](https://github.com/PoBlue/memory-game)
