@@ -6,7 +6,7 @@
 body {
     height: 100vh;
     display: flex;
-    background: greenyellow;
+    background: black;
 }
 .my-game {
     width: 640px;
@@ -14,7 +14,6 @@ body {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    perspective: 1000px;
 }
 .container {
     width: calc(25% - 10px);
