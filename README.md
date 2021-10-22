@@ -18,16 +18,14 @@ Game ends when all cards have been correctly matched and there are no more blank
 - JavaScript
 
 
-### Functions and Objects and Such
+### Functions, Objects, Methods Used
 addEventListener\
 click functionality\
 array\
-render\
 querySelectorAll\
-getElementById\
+css transform and rotate\
 forEach\
-innerText and innerHTML\
-forEach\
+data-* functionality
 if functions
 
 ### Wireframe and Screenshot
