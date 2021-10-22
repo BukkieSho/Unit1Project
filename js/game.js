@@ -1,10 +1,16 @@
+/*------------------------ Cached Element References ------------------------*/
 const cardArray = document.querySelectorAll('.container');
 
+/*---------------------------- Variables (state) ----------------------------*/
 let cardSelected = false;
 let flipControl = false;
 let firstPlay, secondPlay; 
 
+/*----------------------------- Event Listeners -----------------------------*/
+cardArray.forEach(card => card.addEventListener('click', flipCard));
+
 //declaring a lot of functions here
+/*-------------------------------- Functions --------------------------------*/
 
 function flipCard() {
   if (flipControl) return;
@@ -53,5 +59,3 @@ function resetGame() {
     card.style.order = newPick;
   });
 })();
-
-cardArray.forEach(card => card.addEventListener('click', flipCard));
