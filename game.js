@@ -22,9 +22,11 @@ function flipCard() {
 
 function checkMatch() {
   if (firstPlay.dataset.name === secondPlay.dataset.name) {
-    alert('Match found!')
     removeCard();
+    alert('Match found!')
     return;
+  } else {
+    alert('Another Try?')
   }
   unflipCard();
 }
