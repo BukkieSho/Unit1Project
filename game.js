@@ -20,7 +20,6 @@ function flipCard() {
   checkMatch();
 }
 
-
 function checkMatch() {
   if (firstPlay.dataset.name === secondPlay.dataset.name) {
     removeCard();
@@ -48,11 +47,11 @@ function resetGame() {
 }
 
 
-function shuffle() {
+(function shuffle() {
   cardArray.forEach(card => {
     let newPick = Math.floor(Math.random() * 12);
     card.style.order = newPick;
   });
-}
+})();
 
 cardArray.forEach(card => card.addEventListener('click', flipCard));
