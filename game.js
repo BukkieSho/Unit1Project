@@ -35,7 +35,6 @@ function removeCard() {
 }
 
 function unflipCard() {
-  flipControl = true;
   setTimeout(() => {
     firstPlay.classList.remove('flip');
     secondPlay.classList.remove('flip');

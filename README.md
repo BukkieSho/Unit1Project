@@ -28,7 +28,9 @@ innerText and innerHTML\
 forEach\
 if functions
 
-### Screenshots
+### Wireframe and Screenshot
+![wireframe ](images/wireframe.jpg)
+![screenshot](images/screenshot.jpg)
 
 ### Credit
 - [Code with Ana](https://www.youtube.com/watch?v=tjyDOHzKN0w)
