@@ -139,8 +139,40 @@
 
 const cardArray = document.querySelectorAll('.container');
 
+let cardSelected = false;
+let firstPlay, secondPlay; 
+//declaring a lot of functions here
+
+function checkMatch() {
+  if (firstPlay.data.name === secondPlay.data.name) {
+    removeCard();
+    return;
+  }
+  unflipCard();
+}
+
+function removeCard() {
+  firstPlay.removeEventListener('click', flipCard);
+  secondPlay.removeEventListener('click', flipCard);
+}
+
+function unflipCard() {
+  setTimeout(() => {
+    firstPlay.classList.remove('flip');
+    secondPlay.classList.remove('flip');
+  }, 1500);
+}
+
 function flipCard() {
-  this.classList.toggle('flip');
+  this.classList.add('flip');
+  if (!cardSelected) {
+    cardSelected = true;
+    firstPlay = this;
+    return;
+  }
+  secondPlay = this;
+  cardSelected = false;
+  checkMatch ();
 }
 
 cardArray.forEach(card => card.addEventListener('click', flipCard));

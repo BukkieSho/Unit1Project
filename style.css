@@ -14,7 +14,7 @@ body {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    perspective: 100px;
+    perspective: 1000px;
 }
 .container {
     width: calc(25% - 10px);
