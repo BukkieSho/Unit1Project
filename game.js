@@ -2,7 +2,7 @@ const cardArray = document.querySelectorAll('.container');
 
 let cardSelected = false;
 let flipControl = false;
-let [firstPlay, ], secondPlay; 
+let firstPlay, secondPlay; 
 
 //declaring a lot of functions here
 
@@ -22,6 +22,7 @@ function flipCard() {
 
 function checkMatch() {
   if (firstPlay.dataset.name === secondPlay.dataset.name) {
+    alert('Match found!')
     removeCard();
     return;
   }
