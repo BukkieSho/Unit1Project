@@ -14,6 +14,7 @@ body {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    perspective: 100px;
 }
 .container {
     width: calc(25% - 10px);
@@ -22,7 +23,8 @@ body {
     position: relative;
     box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
     transform-style: preserve-3d;
-    transform: scale(1);
+    transform: scale(1.2);
+    transition: transform.5s;
 }
 .face,
 .back {
@@ -32,11 +34,22 @@ body {
     position: absolute;
     border-radius: 5px;
     background: #1c7ccc;
+    backface-visibility: hidden;
+}
+.face {
+    transform: rotateY(180deg);
 }
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 300;
     padding-top: 10px;
+}
+.container:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+.container.flip {
+    transform: rotateY(180deg);
 }
 @media only screen and (max-width: 800px){
     .deck .card{
