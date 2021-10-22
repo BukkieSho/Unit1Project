@@ -32,6 +32,7 @@ function checkMatch() {
 function removeCard() {
   firstPlay.removeEventListener('click', flipCard);
   secondPlay.removeEventListener('click', flipCard);
+  resetGame();
 }
 
 function unflipCard() {
@@ -43,10 +44,8 @@ function unflipCard() {
 }
 
 function resetGame() {
-  [cardSelected, flipControl] = [false, false];
-  [firstPlay, secondPlay] = [null, null];
+  [cardSelected, flipControl, firstPlay, secondPlay] = [false, false, null, null];
 }
-
 
 (function shuffle() {
   cardArray.forEach(card => {

@@ -23,7 +23,8 @@ body {
     box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
     transform-style: preserve-3d;
     transform: scale(1.2);
-    transition: transform.5s;
+    transition: all .5s;
+    transform: scale(1);
 }
 .face,
 .back {
@@ -31,7 +32,6 @@ body {
     height: 100%;
     padding: 10px;
     position: absolute;
-    border-radius: 5px;
     background: blanchedalmond;
     backface-visibility: hidden;
 }
